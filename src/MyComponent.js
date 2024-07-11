@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class MyComponent extends Component {
   componentDidMount() {
-    axios.get('http://localhost:8081/api/data')
+    axios.get('http://localhost:8081')
       .then(response => {
         console.log(response.data);
         // Burada gelen veriyi state'e veya başka bir yere kaydedebilirsiniz.
